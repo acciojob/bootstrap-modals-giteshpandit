@@ -1,16 +1,48 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Modal Example</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Center the modal vertically */
+        .modal-dialog {
+            display: flex;
+            align-items: center;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <!-- Button to Open Modal -->
+    <button type="button" class="btn btn-primary" id="open-modal" data-bs-toggle="modal" data-bs-target="#newton-modal">
+        Open Modal
+    </button>
 
+    <!-- Modal -->
+    <div class="modal fade" id="newton-modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">New Modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae ligula id odio lacinia interdum.</p>
+                </div>
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.min.js"></script>
 </body>
-
 </html>
